@@ -9,26 +9,26 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'torontoonline' ); ?></a>
 
 		<header id="masthead" class="site-header">
 			<div class="site-branding">
 				<?php
 				if ( is_front_page() ) :
 					?>
-					<?php echo get_template_directory(); ?>
-					<img src="<?php get_template_directory(); ?>/img/logo.png" alt="">
+					<?php echo get_template_directory(); ?>/img/intelligente.png
+					<img src="<?php echo get_template_directory(); ?>/img/intelligente.png" alt="">
 					<?php
 				else :
 					?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo get_template_directory(); ?>/img/logo.png" alt="">
+					</a>
 					<?php
 				endif;
 				$torontoonline_description = get_bloginfo( 'description', 'display' );
