@@ -5,10 +5,16 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer">
-	<div class="site-info">
-		
+	<nav id="footer-navigation" role="navigation">
+		<?php wp_nav_menu( array( 'theme_location' => 'main_menu' ) ); ?>
+	</nav>
+
+	<div class="copyright">
+		<hr>
+		<p>torontoOnline <?php echo date('Y'); ?></p>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
