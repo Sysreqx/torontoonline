@@ -10,7 +10,6 @@
 	</nav>
 
 	<div class="copyright">
-		<hr>
 		<p>torontoOnline <?php echo date('Y'); ?></p>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
