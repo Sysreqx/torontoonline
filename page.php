@@ -5,6 +5,12 @@
 
 get_header();
 ?>
+<div class="container featured">
+	<?php while ( have_posts() ) : the_post(); ?>
+		<?php the_post_thumbnail('featured'); ?>
+		<h2><?php the_title(); ?></h2>
+	<?php endwhile; // End of the loop.?>
+</div>
 
 <div id="primary" class="content-area">
 	<div class="container ">
@@ -12,7 +18,6 @@ get_header();
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<h2><?php the_title(); ?></h2>
 				<?php the_content(); ?>
 
 			<?php endwhile; // End of the loop.?>

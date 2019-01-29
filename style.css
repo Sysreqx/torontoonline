@@ -160,8 +160,8 @@ ul#menu-main-menu-1 {
 	border-bottom: 4px solid #a00622;
 }
 
-#menu-main-menu-1 {
-	border-bottom: 2px solid #a00622;
+.copyright {
+	border-top: 2px solid #a00622;
 }
 /* .Footer */
 
@@ -177,6 +177,26 @@ ul#menu-main-menu-1 {
 
 #primary {
 	padding: 20px;
+}
+
+.featured {
+	position: relative;
+}
+
+.featured img {
+	max-width: 100%;
+	margin-top: 20px;
+	object-fit: cover;
+}
+
+.featured h2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	text-transform: lowercase;
+	background: #a00622;
+	padding: 10px 30px 10px 10px;
 }
 
 /* .Main */
@@ -239,6 +259,10 @@ ul#menu-main-menu-1 {
 		flex-flow: row;
 		padding-bottom: 0; 
 		justify-content: flex-end;
+	}
+
+	#menu-main-menu-1 {
+		margin-bottom: 20px;
 	}
 
 	#menu-main-menu a {
