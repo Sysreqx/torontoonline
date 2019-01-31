@@ -312,6 +312,33 @@ article.article {
 }
 /* .Category */
 
+/* Blog */
+@media only screen and (min-width: 550px) {
+
+	.blog .article a {
+		display: flex;
+	}
+}
+
+.blog h2 {
+	margin-bottom: 5px;
+}
+
+.blog .post-information {
+	background: #fff;
+	padding: 0;
+	justify-content: flex-start;
+}
+
+.blog .post-information a {
+	background: none;
+	color: #a60022;
+	padding: 0;
+	display: inline-block;
+	font-size: 14px;
+}
+/* .Blog */
+
 
 /* Small devices (portrait tablets and large phones, 480px and up) */
 @media only screen and (min-width: 480px) {
@@ -347,6 +374,25 @@ article.article {
 
 	.article a {
 		display: flex;
+	}
+
+	/* Blog */
+	.blog #main {
+		flex-basis: 100%;
+		padding-right: 0;
+	}
+
+	.blog .article-content {
+		padding-left: 20px;
+	}
+
+	.blog article.article {
+		display: flex;
+	}
+
+	.blog h2 {
+		margin: 0;
+		margin-bottom: 5px;
 	}
 }
 
