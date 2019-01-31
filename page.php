@@ -5,12 +5,20 @@
 
 get_header();
 ?>
-<div class="container featured">
-	<?php while ( have_posts() ) : the_post(); ?>
-		<?php the_post_thumbnail('featured'); ?>
-		<h2><?php the_title(); ?></h2>
-	<?php endwhile; // End of the loop.?>
-</div>
+<?php while ( have_posts() ) : the_post(); ?>
+	<?php if( has_post_thumbnail() ) { ?>
+		<div class="container featured">
+			<?php the_post_thumbnail('featured'); ?>
+			<h2><?php the_title(); ?></h2>
+		</div>
+
+	<?php } else { ?>
+		<div class="container">
+			<h2 class="red-color"><?php the_title(); ?></h2>
+		</div>
+	<?php } ?>
+<?php endwhile; // End of the loop.?>
+
 
 <div id="primary" class="content-area">
 	<div class="container ">
