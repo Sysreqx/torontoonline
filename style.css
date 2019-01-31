@@ -44,6 +44,14 @@ html {
 	background-color: white;
 }
 
+.pos-abs {
+	position: absolute;
+}
+
+.pos-rel {
+	position: relative;
+}
+
 ul {
 	display: flex;
 	justify-content: flex-start;
@@ -57,6 +65,10 @@ a {
 	font-size: 18px;
 	text-decoration: none;
 	display: block;
+}
+
+img {
+	object-fit: cover;
 }
 
 .container {
@@ -176,7 +188,7 @@ ul#menu-main-menu-1 {
 }
 
 #primary {
-	padding: 20px;
+	padding: 50px 20px 20px;
 }
 
 .featured {
@@ -186,7 +198,6 @@ ul#menu-main-menu-1 {
 .featured img {
 	max-width: 100%;
 	margin-top: 20px;
-	object-fit: cover;
 }
 
 .featured h2 {
@@ -224,6 +235,55 @@ ul#menu-main-menu-1 {
 
 /* .Sidebar */
 
+/* What to Visit */
+img.wp-post-image {
+	width: 100%;
+	height: auto;
+}
+
+.category {
+	top: 0;
+	left: 18px;
+}
+
+ul.blog-visit {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+ul.blog-visit li {
+	margin-bottom: 30px;
+}
+
+.category a {
+	color: #fff;
+	background: #a00622;
+	padding: 12px 25px;
+	text-transform: lowercase;
+	border-radius: 5px;
+}
+
+.blog-visit p {
+	line-height: 30px;
+}
+
+.content {
+	padding: 10px;
+}
+
+.post-information {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 15px;
+	background: #ebebeb;
+}
+
+.post-information p {
+	font-weight: 700;
+	margin: 0;
+}
+/* .What to Visit */
+
 /* Small devices (portrait tablets and large phones, 480px and up) */
 @media only screen and (min-width: 480px) {
 	
@@ -242,6 +302,16 @@ ul#menu-main-menu-1 {
 
 	#secondary {
 		flex-basis: 30%;
+	}
+
+	/* Page What Visit */
+	ul.blog-visit {
+		justify-content: space-between;
+		flex-direction: row;
+	}
+
+	ul.blog-visit li {
+		flex-basis: 49%;
 	}
 }
 
@@ -280,6 +350,16 @@ ul#menu-main-menu-1 {
 
 	#footer-navigation li:first-child {
 		margin-left: 20px;
+	}
+
+	/* Page What Visit */
+	ul.blog-visit {
+		justify-content: space-between;
+		flex-direction: row;
+	}
+
+	ul.blog-visit li {
+		flex-basis: 32%;
 	}
 }
 

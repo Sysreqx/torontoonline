@@ -9,13 +9,15 @@ get_header();
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<!-- Цикл WordPress -->
+			<h2><?php the_title() ?></h2> 
+			<?php the_content() ?>
+		<?php endwhile; else : ?>
+		<p>Записей нет.</p>
+	<?php endif; ?>
 
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
+</main><!-- #main -->
 </div><!-- #primary -->
 
 <?php

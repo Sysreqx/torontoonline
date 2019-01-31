@@ -33,6 +33,7 @@ function register_my_widgets(){
 add_theme_support( 'post-thumbnails' );
 
 add_image_size( 'featured', 1100, 418, true );
+add_image_size( 'medium_blog', 358, 208, true );
 
 /* Display admin bar */
 add_filter('show_admin_bar', '__return_false');
