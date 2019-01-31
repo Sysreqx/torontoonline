@@ -11,7 +11,6 @@ get_header();
 			<?php the_post_thumbnail('featured'); ?>
 			<h2><?php the_title(); ?></h2>
 		</div>
-
 	<?php } else { ?>
 		<div class="container">
 			<h2 class="red-color"><?php the_title(); ?></h2>

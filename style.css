@@ -284,6 +284,22 @@ ul.blog-visit li {
 }
 /* .What to Visit */
 
+/* Single Post */
+#main .column {
+	display: flex;
+	font-size: 18px;
+}
+
+.written-info {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 10px 5px;
+	background: #ebebeb
+}
+/* .Single Post */
+
+
 /* Small devices (portrait tablets and large phones, 480px and up) */
 @media only screen and (min-width: 480px) {
 	
