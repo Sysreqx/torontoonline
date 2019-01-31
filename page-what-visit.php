@@ -45,7 +45,7 @@ get_header();
 							<a href="<?php the_permalink(); ?>">
 								<?php the_post_thumbnail('medium_blog'); ?>
 							</a>
-							<p class="category pos-abs"><?php the_category(', '); ?></p>
+							<p class="p-category pos-abs"><?php the_category(', '); ?></p>
 						</div>
 
 						<div class="content">
