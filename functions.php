@@ -51,3 +51,6 @@ add_image_size( 'medium_blog', 358, 208, true );
 
 /* Display admin bar */
 add_filter('show_admin_bar', '__return_false');
+
+/* Tags */
+add_theme_support('title-tag');
