@@ -29,6 +29,12 @@ get_header();
 	</ul>
 </div>
 
+<div class="icons">
+	<div class="container">
+		<?php dynamic_sidebar( 'front_page_widgets' ); ?>
+	</div>	
+</div>
+
 <div id="front-page">
 	<div class="container">
 		<div class="bottom-front-page">

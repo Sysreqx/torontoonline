@@ -59,6 +59,10 @@ button:focus {
 	position: relative;
 }
 
+h2, a {
+	text-transform: lowercase;
+}
+
 ul {
 	display: flex;
 	justify-content: flex-start;
@@ -536,13 +540,47 @@ li.slick-active button:before {
 
 /* .Slick Slider */
 
+/* Icons Front Page */
+.widget_media_image {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.icons {
+	margin-top: 30px;
+}
+
+.widgettitle {
+	color: #fff;
+	background-color: #a00622;
+	padding: 10px 20px;
+	width: 280px;
+	text-align: center;
+	border-radius: 25px;
+}
+/* .Icons Front Page */
+
+
 
 /* Media Queries */
 
-
 /* Small devices (portrait tablets and large phones, 480px and up) */
 @media only screen and (min-width: 480px) {
-	
+	/* Icons Front Page */
+	.icons {
+		padding: 20px;
+	}
+	.icons .container {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	.widget_media_image {
+		flex-basis: 48%;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -603,6 +641,11 @@ li.slick-active button:before {
 
 	.blog-tips li {
 		flex-basis: 47.5%;
+	}
+
+	/* Icons Front Page */
+	.widget_media_image {
+		flex-basis: 32%;
 	}
 }
 
