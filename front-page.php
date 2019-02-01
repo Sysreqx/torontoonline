@@ -9,7 +9,7 @@ get_header();
 <!-- Content -->
 <!-- Slider -->
 <div class="slider">
-	<ul class="bx-slider">
+	<ul class="slick-slider container">
 		<?php $args = array(
 			'posts_per_page'	=> 4,
 			'order'						=> 'DESC',

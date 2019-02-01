@@ -1,7 +1,13 @@
 $ = jQuery.noConflict();
 
 $(document).ready(function(){
-	$('.bx-slider').bxSlider({
-		mode: 'fade'
+
+	$('.slick-slider').slick({
+		arrows: false,
+		dots: true,
+		infinite: true,
+		fade: true,
+		speed: 500
 	});
+
 });
