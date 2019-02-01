@@ -457,6 +457,11 @@ main#main-fw p:first-child {
 	margin: 0;
 }
 
+.aboutus-section h2,
+.blog-tips h2 {
+	text-transform: lowercase;
+}
+
 .aboutus-section h3,
 .blog-tips h3 {
 	margin-top: 15px;

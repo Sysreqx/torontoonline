@@ -3,8 +3,12 @@
 
 add_action( 'wp_enqueue_scripts', 'torontoonline_scripts' );
 function torontoonline_scripts() {
+	wp_enqueue_style('bxslides-css', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css');
 	wp_enqueue_style( 'style-css', get_stylesheet_uri() );
-	// wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+
+	wp_enqueue_script('jquery');
+	wp_enqueue_script( 'bxslides-js', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js', array('jquery'), '4.2.12', true );
+	wp_enqueue_script( 'scripts-js', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
 }
 
 /* Navigation */
