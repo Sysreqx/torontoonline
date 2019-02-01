@@ -429,6 +429,48 @@ main#main-fw p:first-child {
 }
 /* .Contact Us */
 
+/* Front Page */
+#front-page {
+	padding: 20px;
+}
+
+.blog-tips ul {
+	display: flex;
+	flex-flow: column;
+}
+
+.aboutus-section h3, .aboutus-section a,
+.blog-tips h3, .blog-tips a {
+	color: #a00622;
+	line-height: 25px;
+	font-weight: 700;
+}
+
+.aboutus-section li,
+.blog-tips li {
+	margin-bottom: 45px;
+}
+
+.aboutus-section p, .aboutus-section h3,
+.blog-tips p, .blog-tips h3 {
+	line-height: 25px;
+	margin: 0;
+}
+
+.aboutus-section h3,
+.blog-tips h3 {
+	margin-top: 15px;
+	text-transform: lowercase;
+	margin-bottom: 5px;
+}
+
+.aboutus-section p,
+.blog-tips p {
+	text-align: justify;
+}
+
+/* .Front Page */
+
 /* Media Queries */
 
 
@@ -485,6 +527,16 @@ main#main-fw p:first-child {
 	.blog h2 {
 		margin: 0;
 		margin-bottom: 5px;
+	}
+
+	/* Front Page */
+	.blog-tips ul {
+		flex-flow: row;
+		justify-content: space-between;
+	}
+
+	.blog-tips li {
+		flex-basis: 47.5%;
 	}
 }
 
@@ -547,6 +599,20 @@ main#main-fw p:first-child {
 	/* Contact Form */
 	.wpcf7-form {
 		width: 80%;
+	}
+
+	/* Front Page */
+	.bottom-front-page {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.aboutus-section {
+		flex-basis: 37%;
+	}
+
+	.blog-tips {
+		flex-basis: 60%;
 	}
 }
 
