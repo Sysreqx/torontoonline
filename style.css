@@ -28,6 +28,13 @@ html {
 	box-sizing: inherit;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+	outline: none;
+}
+
 .red-color {
 	color: #a00622;
 }
@@ -158,6 +165,7 @@ ul#menu-main-menu-1 {
 
 .copyright {
 	color: #a00622;
+	border-top: 2px solid #a00622;
 }
 
 #menu-main-menu-1 li {
@@ -172,9 +180,6 @@ ul#menu-main-menu-1 {
 	border-bottom: 4px solid #a00622;
 }
 
-.copyright {
-	border-top: 2px solid #a00622;
-}
 /* .Footer */
 
 /* Sidebar */
@@ -339,6 +344,93 @@ article.article {
 }
 /* .Blog */
 
+/* Contact Us */
+main#main-fw {
+	color: #a00622;
+	line-height: 36px;
+	font-size: 20px;
+}
+
+main#main-fw p:first-child {
+	font-size: 27px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.wpcf7-form input[type="submit"] {
+	border: none;
+	background-color: #a00622;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 17px;
+	font-weight: 700;
+	padding: 5px 50px;
+	margin-left: calc(25% + 20px);
+	width: auto;
+}
+
+.wpcf7-form {
+	padding: 60px;
+	background-color: #f2f2f2;
+	border-radius: 15px;
+	width: 100%;
+	margin: 0 auto 40px;
+}
+
+.wpcf7-form input, .wpcf7-form textarea {
+	width: 100%;
+	border-radius: 10px;
+	border: 2px solid #9b9b9b;
+	padding: 13px;
+}
+
+.wpcf7-form label {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wpcf7-form label span:first-child {
+	margin-right: 20px;
+	font-weight: 700;
+}
+
+
+.wpcf7-form label span {
+	text-align: right;
+	width: 20%;
+}
+
+.wpcf7-form-control-wrap {
+	width: 85%!important;
+}
+
+@media screen and (max-width: 820px) {
+	.wpcf7-form label {
+		display: block;
+	}
+
+	.wpcf7-form input[type="submit"] {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 1040px) {
+	.wpcf7-form label span {
+		width: 30%;
+	}
+}
+
+@media screen and (min-width: 1040px) {
+	.wpcf7-form input[type="submit"] {
+		margin-left: calc(18% + 20px);
+	}
+}
+/* .Contact Us */
+
+/* Media Queries */
+
 
 /* Small devices (portrait tablets and large phones, 480px and up) */
 @media only screen and (min-width: 480px) {
@@ -450,6 +542,11 @@ article.article {
 
 	article.article {
 		display: flex;
+	}
+
+	/* Contact Form */
+	.wpcf7-form {
+		width: 80%;
 	}
 }
 
