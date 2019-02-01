@@ -163,7 +163,7 @@ nav#footer-navigation .menu-main-menu-1 {
 
 ul#menu-main-menu-1 {
 	display: flex;
-	flex-flow: column;
+	flex-flow: row wrap;
 	width: 100%;
 }
 
